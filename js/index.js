@@ -23,9 +23,9 @@ navigationBar.addEventListener("dblclick", () => {
   navigationBar.style.backgroundColor = "peachpuff";
 });
 
-navItems.forEach((link) =>
-  link.addEventListener('click', () => {
-    link.preventDefault;
+navItems.forEach( link =>
+  link.addEventListener('click', event => {
+    event.preventDefault()
     console.log('Default prevented!');
   })
 );
