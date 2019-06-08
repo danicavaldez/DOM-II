@@ -350,3 +350,13 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+
+.uppercase {
+  text-transform: uppercase;
+  color: gold; 
+}
+
+.btnOne {
+  background-color: lavender;
+  color: black;
+}
