@@ -5,6 +5,11 @@ const navigationBar = document.querySelector(".main-navigation");
 const intro = document.querySelector(".intro h2");
 const button = document.querySelector(".btn");
 const signMeUp = document.querySelector(".content-pick");
+const bodyColor = document.querySelector("body")
+const introParagraph = document.querySelector(".intro p")
+const funBusPic = document.querySelector('.intro img');
+const footer = document.querySelector(".footer ");
+const destination = document.querySelector(".destination h4")
 
 funBus.addEventListener("mouseover", () => {
   funBus.classList.add("uppercase");
@@ -38,3 +43,23 @@ button.addEventListener("click", () => {
   button.style.backgroundColor = "lavender";
   event.stopPropagation();
 });
+
+bodyColor.addEventListener("keydown", () =>{
+  bodyColor.style.backgroundColor = "dodgerblue";
+});
+
+funBusPic.addEventListener("contextmenu", (event) => {
+   funBusPic.style.display = 'none';
+});
+
+introParagraph.addEventListener("copy", () => {
+  alert("Are you sure you want to copy that?");
+})
+
+window.addEventListener("load", () => { 
+  alert("The page has loaded. Welcome to Fun Bus!");
+})
+
+window.addEventListener("resize", () => {
+  alert("Let's resize the page!")
+})
